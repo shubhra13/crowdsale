@@ -30,10 +30,11 @@
 
  ![AddingToken](Images/TokenAddition.png)
 
-### The Funds go to the wallet address: 0x59e89683BD9FcAEea66843De01F3a13e842CBD20
-### Contract Id which deployed the contract: 0x9b5a253b0Ec5B437b72CFBC623084d9b3a32515D
+##### The Funds go to the wallet address: 0x59e89683BD9FcAEea66843De01F3a13e842CBD20
+##### Contract Id which deployed the contract: 0x9b5a253b0Ec5B437b72CFBC623084d9b3a32515D
 
-### How to Run the Code and play around with it in your localnetwork
+---
+## How to Run the Code and play around with it in your local testnet:
 
 0. In `PupperCrowdsale.sol` you can change the close to be `now + 5 minutes` instead of `now + 24 weeks` if you want to see the full cycle of crowdfund close and token distribution
 1. Compile PupperCrowdsale.sol
@@ -48,8 +49,9 @@
 5. Click send to the toke_sales_address you got from deployment
 6. And desired amount of ETH ( Refer to the above `Send Fund to Sales Manager Address`)
 7. Once close period is up (in this case now + 5 minutes) click on `FinalizeTheDeal`  (It will cost gas, metamask will open, click on `confirm`)
-  - if you click before the goal is reached or before crowdsale is closed you will get an error with exact error statement.
+    - if you click before the goal is reached or before crowdsale is closed you will get an error with exact error statement.
 8. Once its finalized succesfully you will see the ETHs in the Wallet address you gave during deployment
+    - if you click before the goal is reached or before crowdsale is closed you will get an error with exact error statement.
 9. click on `withdrawToken` (It will cost gas, metamask will open, click on `confirm`)
 10. In metamask connect to the address which sent ETH in get PUP Token
 11. Follow the above section of `how to collect PUP token after crowdsale` with your own token address the you noted after deployment
