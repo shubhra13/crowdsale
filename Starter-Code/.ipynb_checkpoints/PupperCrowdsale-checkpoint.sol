@@ -99,6 +99,10 @@ contract PupperCoinSaleDeployer {
     function withdrawTokensToBeneficiary() public {
         puppercoin_sale.withdrawTokens(msg.sender);
     }
-
+    
+    function claimRefund(address payable beneficiary) public  
+    {
+        puppercoin_sale.claimRefund(beneficiary);
+    }
     
 }
